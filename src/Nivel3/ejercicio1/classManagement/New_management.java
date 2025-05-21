@@ -1,4 +1,6 @@
-package Nivel3.ejercicio1;
+package Nivel3.ejercicio1.classManagement;
+
+import Nivel3.ejercicio1.classData.*;
 
 import java.util.ArrayList;
 import java.util.Scanner;

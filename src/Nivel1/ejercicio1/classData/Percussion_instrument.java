@@ -1,7 +1,7 @@
-package Nivel1.ejercicio1;
+package Nivel1.ejercicio1.classData;
 
-public class percussion_instrument extends instrument {
-    public percussion_instrument(String name, Double price) {
+public class Percussion_instrument extends Instrument {
+    public Percussion_instrument(String name, Double price) {
         super(name, price);
     }
 

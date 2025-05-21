@@ -1,4 +1,4 @@
-package Nivel1.ejercicio2;
+package Nivel1.ejercicio2.classData;
 
 public class Car {
     private static final String brand = "Ford";

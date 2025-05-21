@@ -1,20 +1,20 @@
-package Nivel3.ejercicio1;
+package Nivel3.ejercicio1.classData;
 
-public class F1_news extends News {
+public class Motorcycle_news extends News {
     private String team;
     private static Double starting_price;
     private static int starting_score;
 
-    public F1_news(String headline, String team) {
+    public Motorcycle_news(String headline, String team) {
         super(headline);
         this.team = team;
         starting_price = (double)100.0F;
-        starting_score = 4;
+        starting_score = 3;
     }
 
     public Double calculate_price_news() {
         Double final_price = starting_price;
-        if (this.team.equals("Ferrari") || this.team.equals("Mercedes")) {
+        if (this.team.equals("Honda") || this.team.equals("Yamaha")) {
             final_price = final_price + (double)50.0F;
         }
 
@@ -23,10 +23,11 @@ public class F1_news extends News {
 
     public int calculate_news_score() {
         int final_score = starting_score;
-        if (this.team.equals("Ferrari") || this.team.equals("Mercedes")) {
-            final_score += 2;
+        if (this.team.equals("Honda") || this.team.equals("Yamaha")) {
+            final_score += 3;
         }
 
         return final_score;
     }
 }
+

@@ -1,7 +1,7 @@
-package Nivel1.ejercicio1;
+package Nivel1.ejercicio1.classData;
 
-public class wind_instrument extends instrument {
-    public wind_instrument(String name, Double price) {
+public class Wind_instrument extends Instrument {
+    public Wind_instrument(String name, Double price) {
         super(name, price);
     }
 

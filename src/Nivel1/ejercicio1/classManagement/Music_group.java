@@ -1,17 +1,19 @@
-package Nivel1.ejercicio1;
+package Nivel1.ejercicio1.classManagement;
+
+import Nivel1.ejercicio1.classData.Instrument;
 
 import java.util.ArrayList;
 
-public class music_group {
+public class Music_group {
     private String name;
-    private ArrayList<instrument> instruments;
+    private ArrayList<Instrument> instruments;
 
-    public music_group(String name) {
+    public Music_group(String name) {
         this.name = name;
         this.instruments = new ArrayList();
     }
 
-    public void add_instrument(instrument instrument) {
+    public void add_instrument(Instrument instrument) {
         this.instruments.add(instrument);
     }
 

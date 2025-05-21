@@ -1,4 +1,4 @@
-package Nivel2.ejercicio1;
+package Nivel2.ejercicio1.classData;
 
 public class phone {
     private String brand;

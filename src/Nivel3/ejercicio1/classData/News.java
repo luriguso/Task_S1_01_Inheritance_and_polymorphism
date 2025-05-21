@@ -1,4 +1,4 @@
-package Nivel3.ejercicio1;
+package Nivel3.ejercicio1.classData;
 
 public abstract class News {
     private String headline;

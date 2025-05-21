@@ -1,4 +1,7 @@
-package Nivel3.ejercicio1;
+package Nivel3.ejercicio1.main;
+
+import Nivel3.ejercicio1.classData.Menu;
+import Nivel3.ejercicio1.classManagement.Editor_management;
 
 import java.util.Scanner;
 

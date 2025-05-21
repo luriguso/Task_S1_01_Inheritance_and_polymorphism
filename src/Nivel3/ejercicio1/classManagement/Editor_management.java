@@ -1,4 +1,7 @@
-package Nivel3.ejercicio1;
+package Nivel3.ejercicio1.classManagement;
+
+import Nivel3.ejercicio1.classData.Editor;
+import Nivel3.ejercicio1.classData.News;
 
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -61,15 +64,14 @@ public class Editor_management {
             System.out.println("Enter the new editor's headline: ");
 
             for(News news : editor_search.getNews()) {
-                if (news.getHeadline().equals(headline)) {
+                if (news.getHeadline().equalsIgnoreCase(headline)) {
                     editor_search.getNews().remove(index_news);
                     ++index_news;
                     System.out.println("News removed successfully");
                     break;
                 }
+                System.out.println("News not found");
             }
-
-            System.out.println("News not found");
         } else {
             System.out.println("The editor does not exist");
         }

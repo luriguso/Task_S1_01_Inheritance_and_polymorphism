@@ -1,7 +1,7 @@
-package Nivel1.ejercicio1;
+package Nivel1.ejercicio1.classData;
 
-public class stringed_instrument extends instrument {
-    public stringed_instrument(String name, Double price) {
+public class Stringed_instrument extends Instrument {
+    public Stringed_instrument(String name, Double price) {
         super(name, price);
     }
 

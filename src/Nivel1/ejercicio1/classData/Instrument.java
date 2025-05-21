@@ -1,10 +1,10 @@
-package Nivel1.ejercicio1;
+package Nivel1.ejercicio1.classData;
 
-public abstract class instrument {
+public abstract class Instrument {
     private String name;
     private Double price;
 
-    public instrument(String name, Double price) {
+    public Instrument(String name, Double price) {
         this.name = name;
         this.price = price;
     }

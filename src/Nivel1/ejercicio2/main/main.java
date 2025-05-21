@@ -1,4 +1,6 @@
-package Nivel1.ejercicio2;
+package Nivel1.ejercicio2.main;
+
+import Nivel1.ejercicio2.classData.Car;
 
 public class main {
     public static void main(String[] args) {
