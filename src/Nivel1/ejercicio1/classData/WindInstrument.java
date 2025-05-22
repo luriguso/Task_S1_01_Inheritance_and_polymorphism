@@ -1,11 +1,11 @@
 package Nivel1.ejercicio1.classData;
 
-public class Wind_instrument extends Instrument {
-    public Wind_instrument(String name, Double price) {
+public class WindInstrument extends Instrument {
+    public WindInstrument(String name, Double price) {
         super(name, price);
     }
 
-    public void play_instrument() {
+    public void playInstrument() {
         System.out.println("A wind instrument is playing");
     }
 

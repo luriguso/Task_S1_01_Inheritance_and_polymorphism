@@ -9,7 +9,7 @@ public abstract class Instrument {
         this.price = price;
     }
 
-    public abstract void play_instrument();
+    public abstract void playInstrument();
 
     public String toString() {
         return "instrument{name='" + this.name + '\'' + ", price=" + this.price + '}';

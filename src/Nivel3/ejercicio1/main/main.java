@@ -1,14 +1,14 @@
 package Nivel3.ejercicio1.main;
 
 import Nivel3.ejercicio1.classData.Menu;
-import Nivel3.ejercicio1.classManagement.Editor_management;
+import Nivel3.ejercicio1.classManagement.EditorManagement;
 
 import java.util.Scanner;
 
 public class main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        Editor_management editorManagement = new Editor_management();
+        EditorManagement editorManagement = new EditorManagement();
         boolean process = true;
 
         while(process) {
@@ -20,22 +20,22 @@ public class main {
                     editorManagement.add_editor(sc);
                     break;
                 case 2:
-                    editorManagement.remove_editor(sc);
+                    editorManagement.removeEditor(sc);
                     break;
                 case 3:
-                    editorManagement.submit_news_to_editor(sc);
+                    editorManagement.submitNewsToEditor(sc);
                     break;
                 case 4:
-                    editorManagement.remove_news_from_editor(sc);
+                    editorManagement.removeNewsFromEditor(sc);
                     break;
                 case 5:
-                    editorManagement.show_news_editor();
+                    editorManagement.showNewsEditor();
                     break;
                 case 6:
-                    editorManagement.calculate_news_score();
+                    editorManagement.calculateNewsScore();
                     break;
                 case 7:
-                    editorManagement.calculate_news_price();
+                    editorManagement.calculateNewsPrice();
                     break;
                 case 8:
                     process = false;

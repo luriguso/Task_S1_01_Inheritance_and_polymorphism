@@ -1,25 +1,25 @@
 package Nivel1.ejercicio2.classData;
 
 public class Car {
-    private static final String brand = "Ford";
+    private static final String BRAND = "Ford";
     private static String model;
-    private final int power;
+    private final int POWER;
 
     public Car(String model, int power) {
-        this.power = power;
+        this.POWER = power;
         Car.model = model;
     }
 
     public static void accelerate() {
-        System.out.println("El vehículo está acelerando");
+        System.out.println("The vehicle is accelerating");
     }
 
     public void curb() {
-        System.out.println("El vehículo está frenando");
+        System.out.println("The vehicle is braking");
     }
 
     public String toString() {
-        return "Car{brand=Ford\nmodel=" + model + "\npower=" + this.power + '}';
+        return "Car{brand=Ford\nmodel=" + model + "\npower=" + this.POWER + '}';
     }
 }
 

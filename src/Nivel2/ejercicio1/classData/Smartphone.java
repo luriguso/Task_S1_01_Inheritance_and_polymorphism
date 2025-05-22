@@ -3,7 +3,7 @@ package Nivel2.ejercicio1.classData;
 import Nivel2.ejercicio1.interfaces.Camera;
 import Nivel2.ejercicio1.interfaces.Clock;
 
-public class Smartphone extends phone implements Camera, Clock {
+public class Smartphone extends Phone implements Camera, Clock {
     public Smartphone(String marca, String modelo) {
         super(marca, modelo);
     }

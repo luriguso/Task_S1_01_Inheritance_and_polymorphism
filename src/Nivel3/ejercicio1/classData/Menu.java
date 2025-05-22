@@ -13,7 +13,7 @@ public class Menu {
         System.out.println("8. exit");
     }
 
-    public static void menu_news() {
+    public static void menuNews() {
         System.out.println("Menu news");
         System.out.println("1. Football news");
         System.out.println("2. Basketball news");

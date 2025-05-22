@@ -4,16 +4,16 @@ import Nivel1.ejercicio1.classData.Instrument;
 
 import java.util.ArrayList;
 
-public class Music_group {
+public class MusicGroup {
     private String name;
     private ArrayList<Instrument> instruments;
 
-    public Music_group(String name) {
+    public MusicGroup(String name) {
         this.name = name;
         this.instruments = new ArrayList();
     }
 
-    public void add_instrument(Instrument instrument) {
+    public void addInstrument(Instrument instrument) {
         this.instruments.add(instrument);
     }
 

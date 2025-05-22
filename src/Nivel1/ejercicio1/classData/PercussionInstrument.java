@@ -1,11 +1,11 @@
 package Nivel1.ejercicio1.classData;
 
-public class Percussion_instrument extends Instrument {
-    public Percussion_instrument(String name, Double price) {
+public class PercussionInstrument extends Instrument {
+    public PercussionInstrument(String name, Double price) {
         super(name, price);
     }
 
-    public void play_instrument() {
+    public void playInstrument() {
         System.out.println("A percussion instrument is playing");
     }
 

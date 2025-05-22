@@ -4,13 +4,13 @@ import java.util.ArrayList;
 
 public class Editor {
     private String name;
-    private final String dni;
+    private final String DNI;
     private static Double salary;
     private ArrayList<News> news;
 
     public Editor(String name, String dni) {
         this.name = name;
-        this.dni = dni;
+        this.DNI = dni;
         salary = (double)1500.0F;
         this.news = new ArrayList();
     }
@@ -19,8 +19,8 @@ public class Editor {
         return this.name;
     }
 
-    public String getDni() {
-        return this.dni;
+    public String getDNI() {
+        return this.DNI;
     }
 
     public static Double getSalary() {
@@ -31,15 +31,15 @@ public class Editor {
         return this.news;
     }
 
-    public void increase_salary(Double salary) {
+    public void increaseSalary(Double salary) {
         Editor.salary = salary;
     }
 
-    public void add_news(News news) {
+    public void addNews(News news) {
         this.news.add(news);
     }
 
     public String toString() {
-        return "Editor{name='" + this.name + '\'' + ", dni='" + this.dni + '\'' + ", news=" + this.news + '}';
+        return "Editor{name='" + this.name + '\'' + ", dni='" + this.DNI + '\'' + ", news=" + this.news + '}';
     }
 }

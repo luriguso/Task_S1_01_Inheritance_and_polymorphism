@@ -1,5 +1,7 @@
 package Nivel3.ejercicio1.classData;
 
+import java.math.BigDecimal;
+
 public abstract class News {
     private String headline;
     private String text;
@@ -13,7 +15,7 @@ public abstract class News {
         return this.headline;
     }
 
-    public abstract Double calculate_price_news();
+    public abstract BigDecimal calculatePriceNews();
 
-    public abstract int calculate_news_score();
+    public abstract int calculateNewsScore();
 }
