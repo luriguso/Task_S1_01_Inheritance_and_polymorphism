@@ -6,6 +6,7 @@ public class main {
     public static void main(String[] args) {
         Smartphone movil = new Smartphone("Samsung", "S22 Ultra");
         movil.call("");
+        movil.call("2345678");
         movil.alarm();
         movil.photograph();
     }
