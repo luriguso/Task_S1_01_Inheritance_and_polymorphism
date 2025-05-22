@@ -30,13 +30,24 @@ public class EditorManagement {
     }
 
     public void removeEditor(Scanner scanner) {
+        if(this.editors.isEmpty()) {
+            System.out.println("There are no editors to remove");
+            return;
+        }
+
         this.listEditors();
+        System.out.println("Select an editor: ");
         int index = scanner.nextInt();
+
         this.editors.remove(index);
         System.out.println("the editor was removed");
     }
 
     public void submitNewsToEditor(Scanner scanner) {
+        if(this.editors.isEmpty()) {
+            System.out.println("There are no editors to add news");
+            return;
+        }
         NewManagement new_management = new NewManagement();
         this.listEditors();
         int indexEditor = scanner.nextInt();
@@ -46,22 +57,29 @@ public class EditorManagement {
     }
 
     public void removeNewsFromEditor(Scanner scanner) {
+        if(this.editors.isEmpty()) {
+            System.out.println("There are no editors to remove");
+            return;
+        }
         System.out.println("Enter the editor's name: ");
         String name = scanner.nextLine();
-        System.out.println("Enter the headline of the news: ");
-        String headline = scanner.nextLine();
         Editor editorSearch = null;
 
         for(Editor editor : this.editors) {
             if (editor.getName().equals(name)) {
                 editorSearch = editor;
-                System.out.println("The editor encontrado");
+                System.out.println("The editor found");
             }
         }
 
         if (editorSearch != null) {
+            if(editorSearch.getNews().isEmpty()) {
+                System.out.println("The editor dont have any news");
+                return;
+            }
             int index_news = 0;
-            System.out.println("Enter the new editor's headline: ");
+            System.out.println("Enter the headline of the news: ");
+            String headline = scanner.nextLine();
 
             for(News news : editorSearch.getNews()) {
                 if (news.getHeadline().equalsIgnoreCase(headline)) {
@@ -73,22 +91,34 @@ public class EditorManagement {
                 System.out.println("News not found");
             }
         } else {
-            System.out.println("The editor does not exist");
+            System.out.println("The editor " + name + " does not exist");
         }
 
     }
 
     public void showNewsEditor() {
+        if(this.editors.isEmpty()) {
+            System.out.println("There are no editors to show");
+            return;
+        }
         for(Editor editor : this.editors) {
-            System.out.println(editor.getName());
-
-            for(News news : editor.getNews()) {
-                System.out.println(news.getHeadline());
+            System.out.println("Edito: " + editor.getName());
+            System.out.println("News: ");
+            if(!editor.getNews().isEmpty()) {
+                for(News news : editor.getNews()) {
+                    System.out.println("    *"+news.getHeadline());
+                }
+            }else {
+                System.out.println("No news found");
             }
         }
     }
 
     public void calculateNewsScore() {
+        if(this.editors.isEmpty()) {
+            System.out.println("There are no registered editors");
+            return;
+        }
         for(Editor editor : this.editors) {
             if (editor.getNews().isEmpty()) {
                 System.out.println("There are no registered news items");
@@ -98,10 +128,13 @@ public class EditorManagement {
                 }
             }
         }
-
     }
 
     public void calculateNewsPrice() {
+        if(this.editors.isEmpty()) {
+            System.out.println("There are no registered editors");
+            return;
+        }
         for(Editor editor : this.editors) {
             if (editor.getNews().isEmpty()) {
                 System.out.println("There are no registered news items");

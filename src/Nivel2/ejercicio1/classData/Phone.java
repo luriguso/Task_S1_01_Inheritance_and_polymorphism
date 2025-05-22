@@ -10,6 +10,11 @@ public class Phone {
     }
 
     public void call(String number) {
+        if(number == null || number.isEmpty()) {
+            System.out.println("The phone number is null or empty");
+            return;
+        }
+
         System.out.println("Calling " + number);
     }
 }
